@@ -1,0 +1,135 @@
+/**
+ * @name Anime
+ * @author Gilsinho
+ * @version 0.1
+ * @description Highly customizable theme for BetterDiscord
+ * @source https://github.com/ClearVision/ClearVision-v6
+ * @website https://clearvision.gitlab.io
+*/
+
+@import url('https://clearvision.gitlab.io/v6/main.css');
+
+
+
+:root {
+  --main-color: #ff5d00;
+  --hover-color: #770000;
+  --success-color: #ff008d;
+  --danger-color: #a20000;
+  --url-color: #ff0000;
+  --background-image: url('https://i.imgur.com/NJnbLU6.jpeg');
+  --background-shading: 40%;
+  --background-position: center;
+  --background-size: cover;
+  --background-repeat: no-repeat;
+  --background-attachment: fixed;
+  --background-brightness: 100%;
+  --background-contrast: 100%;
+  --background-saturation: 200%;
+  --background-grayscale: 0%;
+  --background-invert: 12%;
+  --background-blur: 0px;
+  --background-overlay: rgba(0,0,0,0.19);
+  --user-popout-image: var(--background-image);
+  --user-popout-position: center;
+  --user-popout-size: cover;
+  --user-popout-repeat: no-repeat;
+  --user-popout-attachment: fixed;
+  --user-popout-brightness: 100%;
+  --user-popout-contrast: 100%;
+  --user-popout-saturation: 100%;
+  --user-popout-grayscale: 0%;
+  --user-popout-invert: 0%;
+  --user-popout-blur: 3px;
+  --user-modal-image: url('https://i.imgur.com/NJnbLU6.jpeg');
+  --user-modal-position: center;
+  --user-modal-size: cover;
+  --user-modal-repeat: no-repeat;
+  --user-modal-attachment: fixed;
+  --user-modal-brightness: 100%;
+  --user-modal-contrast: 100%;
+  --user-modal-saturation: 200%;
+  --user-modal-grayscale: 0%;
+  --user-modal-invert: 0%;
+  --user-modal-blur: 0px;
+  --home-icon: url('https://i.imgur.com/fk4gcCt.jpeg');
+  --home-position: center;
+  --home-size: 40px;
+  --channel-unread: #ff009e;
+  --channel-color: rgba(255,119,0,1);
+  --muted-color: rgba(221,119,0,0.72);
+  --online-color: #43b581;
+  --idle-color: #faa61a;
+  --dnd-color: #982929;
+  --streaming-color: #593695;
+  --offline-color: #808080;
+  --main-font: 'Whitney';
+  --code-font: 'Consolas';
+  --backdrop-overlay: rgba(0,0,0,0.8);
+  --backdrop-image: var(--background-image);
+  --backdrop-position: var(--background-position);
+  --backdrop-size: var(--background-size);
+  --backdrop-repeat: var(--background-repeat);
+  --backdrop-attachment: var(--background-attachment);
+  --backdrop-brightness: var(--background-brightness);
+  --backdrop-contrast: var(--background-contrast);
+  --backdrop-saturation: var(--background-saturation);
+  --backdrop-invert: var(--background-invert);
+  --backdrop-grayscale: var(--background-grayscale);
+  --backdrop-sepia: var(--background-sepia);
+  --backdrop-blur: var(--background-blur);
+  --bd-blue: var(--main-color);
+  --bd-blue-hover: var(--hover-color);
+  --bd-blue-active: var(--hover-color);
+  --channels-width: 220px;
+  --members-width: 240px;
+}
+
+/** Rainbow mentions
+*/
+.mentioned-xhSam7:before {visibility: hidden;}
+.theme-dark .isMentioned-N-h9aa .mention, .theme-light .isMentioned-N-h9aa .mention:hover,.theme-dark .wrapper-3WhCwL:hover, .theme-dark .wrapper-3WhCwL {
+  background: transparent !important;
+}
+.theme-dark .isMentioned-N-h9aa .mention, .theme-light .isMentioned-N-h9aa .mention,.theme-dark .wrapper-3WhCwL,.theme-dark .wrapper-3WhCwL:hover,.theme-dark .isMentioned-N-h9aa, .theme-dark .isMentioned-N-h9aa {
+  color: #00e5ff;
+  animation: rainbow 3s infinite linear;
+}
+
+.theme-dark .mentioned-xhSam7,
+.message-2qnXI6.mentioned-xhSam7.selected-2P5D_Z, 
+.mouse-mode.full-motion .mentioned-xhSam7:hover {
+  border: 2px solid rgba(129, 0, 187, .7);
+  animation: fancy 3s infinite linear;
+}
+.mouse-mode.full-motion .mentioned-xhSam7:hover {
+  border: 2px solid rgba(129, 0, 187, .8); 
+  animation: fancy 3s infinite linear;
+}
+.scrollablecontainer-2NUZem {
+  color: #00e5ff;
+  animation: rainbow 3s infinite linear;
+}
+@keyframes fancy {
+  from {-webkit-filter: hue-rotate(0deg);}
+  to {-webkit-filter: hue-rotate(360deg);}
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+@keyframes rainbow {
+    from {color: #6666ff;}
+    25%  {color: #0099ff;}
+    50%  {color: #00ff00;}
+    75%  {color: #ff3399;}
+    100% {color: #6666ff;}
+}
